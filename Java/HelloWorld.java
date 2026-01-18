@@ -5,7 +5,10 @@ public class HelloWorld {
     }
 
     public static void function(int value, int value2) {
-        System.out.println(value / value2);
-
+        if (value2 == 0) {
+            System.err.println("エラー: 0による除算はできません。");
+        } else {
+            System.out.println(value / value2);
+        }
     }
 }
